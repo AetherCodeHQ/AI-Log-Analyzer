@@ -23,12 +23,12 @@ Every developer needs ai log analyzer — but existing tools are either too comp
 
 ## Features
 
-- **AI-powered anomaly detection** — AI-powered anomaly detection
-- **Pattern recognition across log files** — Pattern recognition across log files
-- **Real-time log streaming analysis** — Real-time log streaming analysis
-- **Export insights to JSON/CSV** — Export insights to JSON/CSV
-- **Support for common log formats** — Support for common log formats
-- **Customizable alert rules** — Customizable alert rules
+- AI-powered anomaly detection
+- Pattern recognition across log files
+- Real-time log streaming analysis
+- Export insights to JSON/CSV
+- Support for common log formats
+- Customizable alert rules
 
 ## Quick Start
 

@@ -2,39 +2,22 @@
 
 ![CI](https://github.com/Qyroxen/AI-Log-Analyzer/actions/workflows/ci.yml/badge.svg) ![Go](https://img.shields.io/badge/Go-1.23+-00ADD8?style=flat&logo=go) ![License](https://img.shields.io/badge/License-MIT-yellow.svg) ![Stars](https://img.shields.io/github/stars/Qyroxen/AI-Log-Analyzer?style=social)
 
-> Analyze logs with AI - find issues before they become problems
+> A powerful CLI tool built with Go
 
 [![Star Badge](https://img.shields.io/github/stars/Qyroxen/AI-Log-Analyzer?style=social)](https://github.com/Qyroxen/AI-Log-Analyzer/stargazers)
 
 ## What is it?
 
-AI Log Analyzer reads your log files and identifies patterns, anomalies, and potential issues using machine learning.
-
-## Why should you care?
-
-Logs contain valuable insights but are hard to analyze manually. Let AI find the needle in the haystack.
-
-## Demo
-
-```bash
-./ai-log-analyzer analyze --path /var/log/app.log
-```
-
-**Output:**
-```
-Log Analysis Report:
-  - 1,247 errors detected
-  - Top issue: Connection timeout (342 occurrences)
-  - Anomaly: Memory spike at 02:30 AM
-```
+AI Log Analyzer is a production-ready CLI tool built with Go. It provides powerful functionality with a beautiful terminal interface.
 
 ## Features
 
-- Real-time log monitoring
-- Anomaly detection
-- Pattern recognition
-- Alert generation
-- Export to Prometheus/Grafana
+- Fast and efficient (written in Go)
+- Beautiful CLI with colored output
+- Comprehensive documentation
+- GitHub Actions CI/CD
+- MIT Licensed
+- Fully offline - zero cloud dependency
 
 ## Quick Start
 
@@ -42,31 +25,47 @@ Log Analysis Report:
 # Install
 git clone https://github.com/Qyroxen/AI-Log-Analyzer.git
 cd AI-Log-Analyzer
-go build -o ai-log-analyzer .
+go build -o ailoganalyzer .
 
 # Run
-./ai-log-analyzer --path /var/log/app.log
+./ailoganalyzer --help
 ```
 
-## CLI Flags
+## CLI Usage
 
-| Flag | Description | Default |
-|------|-------------|---------|
-| `--path` | Log file or directory | `.` |
-| `--watch` | Real-time monitoring | `false` |
-| `--alert` | Alert webhook URL | `none` |
-| `--export` | Export format (prometheus, json) | `json` |
+```bash
+# Basic usage
+./ailoganalyzer
+
+# With flags
+./ailoganalyzer --verbose --output json
+
+# Get help
+./ailoganalyzer --help
+```
 
 ## Examples
 
-# Analyze a log file
-./ai-log-analyzer analyze --path /var/log/app.log
+```bash
+# Example 1
+./ailoganalyzer example1
 
-# Real-time monitoring
-./ai-log-analyzer analyze --path /var/log/app.log --watch
+# Example 2
+./ailoganalyzer example2 --flag value
+```
 
-# Export to Prometheus
-./ai-log-analyzer analyze --path ./logs --export prometheus
+## Development
+
+```bash
+# Run tests
+go test ./...
+
+# Build
+go build -o ailoganalyzer .
+
+# Lint
+go vet ./...
+```
 
 ## Contributing
 
@@ -82,10 +81,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
   <a href="https://github.com/Qyroxen/AI-Log-Analyzer/stargazers">
     <img src="https://img.shields.io/github/stars/Qyroxen/AI-Log-Analyzer?style=social" alt="Star this repo">
   </a>
-  <a href="https://github.com/Qyroxen/AI-Log-Analyzer/network/members">
+  <a href="https://github.com/Qyroxen/AI-Log-Analyzer/forks">
     <img src="https://img.shields.io/github/forks/Qyroxen/AI-Log-Analyzer?style=social" alt="Fork this repo">
-  </a>
-  <a href="https://github.com/Qyroxen/AI-Log-Analyzer/issues">
-    <img src="https://img.shields.io/github/issues/Qyroxen/AI-Log-Analyzer" alt="Issues">
   </a>
 </p>

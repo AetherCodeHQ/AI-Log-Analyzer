@@ -6,7 +6,7 @@ Thank you for your interest in contributing! 🎉
 
 ### 1. Fork the Repository
 ```bash
-git clone https://github.com/Qyroxen/AI-Log-Analyzer.git
+git clone https://github.com/AetherCodeHQ/AI-Log-Analyzer.git
 cd AI-Log-Analyzer
 ```
 
